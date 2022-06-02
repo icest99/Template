@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="moment.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <h1>MAQE Forum</h1>
+            <p>Your current timezone is: <span class="timezone"></span></p>
+        </header>
+        <Main id="output" class="main-container"></Main>
+    
+        <script type="text/x-handlebars-template" id="template">
+    
+            {{#each this}}
+            <div class="post-container">
+                <div class="post-metadata">
+                    <img src="{{avatar_url}}" alt="">
+                    <span class="author-name">{{name}}</span>&nbsp;posted on {{convertTime created_at}}
+                </div>
+                <hr>
+                <div class="post-info">
+                    <img src="{{image_url}}" alt="">
+                    <div class="detail">                
+                        <h3>{{title}}</h3>
+                        <p>{{body}}</p>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}} 
+        </script>
+    
+        </Main>
+    </div>
+    <script src="handlebars-v4.7.7.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

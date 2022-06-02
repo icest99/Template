@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* I start here */
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Biryani', sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+    min-width: 750px;
+    max-width: 900px;
+    /* position: absolute; */
+    margin: 0 auto;
+
+}
+
+.page-wrapper > h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+main > .post-container:nth-child(even) {
+    background-color: #ccecff;
+}
+
+.post-container:nth-child(even) > hr {
+    border: 1px solid #c2d1da;
+}
+
+.post-container {
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    
+    box-shadow: 0px 2px 3px 0px rgba(136,136,136,0.75);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(136,136,136,0.75);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(136,136,136,0.75);
+}
+
+.post-container > .post-metadata {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 15px;
+}
+
+.post-metadata > img {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+    padding-right: 5px;
+} 
+
+.post-metadata > .author-name {
+    color: #f75b33;
+    font-weight: 500;
+}
+
+.post-metadata {
+    color: rgb(81, 81, 81);
+    font-size: 14px;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.post-container > .post-info {
+    display: flex;
+}
+
+.post-info > img {
+    padding-top: 20px;
+    padding-left: 15px;
+    width: 225px;
+    height: fit-content;
+}
+
+.post-info > .detail {
+    margin-left: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+
+.detail > h3 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+header > p {
+    font-size: 14px;
+}
